@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judy - 个人主页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 背景动画 -->
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <!-- 主要内容布局 -->
+    <div class="main-layout">
+        <!-- 左侧固定内容 -->
+        <div class="left-panel">
+            <div class="profile-card">
+                <!-- 头像部分 -->
+                <div class="avatar-container">
+                    <div class="avatar-wrapper">
+                        <img src="assets/profile-photo.jpg" alt="Judy" class="profile-photo" id="profilePhoto">
+                        <div class="avatar-ring"></div>
+                    </div>
+                </div>
+
+                <!-- 个人信息 -->
+                <div class="profile-info">
+                    <h1 class="name" id="name">Peixin (Judy) Shi</h1>
+                    <p class="school" id="school">Columbia University | Computer Science</p>
+                    
+                    <!-- 联系信息 -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span id="email">ps3255@columbia.edu</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span id="phone">(929) 358-8015</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="location">New York & Austin</span>
+                        </div>
+                    </div>
+
+                    <!-- 社交媒体链接 -->
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/peixin-shi" target="_blank" class="social-link linkedin" id="linkedinLink">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Doglily3" target="_blank" class="social-link github" id="githubLink">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+
+                    <!-- 个人简介 -->
+                    <div class="bio">
+                        <p id="bio">Hi! I'm a Computer Science student at Columbia University, passionate about building intelligent, data-driven products that solve real-world problems. I enjoy designing systems that combine AI, backend engineering, and thoughtful UI design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧滚动内容 -->
+        <div class="right-panel">
+            <!-- About 部分 -->
+            <div class="about-section">
+                <div class="about-container">
+            <!-- About 介绍 -->
+            <div class="about-card">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <p>Hi! I'm Peixin (Judy) Shi, a Computer Science student at Columbia University, passionate about building intelligent, data-driven products that solve real-world problems.</p>
+                    <p>I enjoy designing systems that combine AI, backend engineering, and thoughtful UI design, and I take pride in turning complex ideas into elegant, usable tools.</p>
+                    <p>Currently based in New York and Austin, I'm seeking software or machine learning internship opportunities for 2025–2026.</p>
+                </div>
+            </div>
+
+            <!-- 教育背景 -->
+            <div class="about-card">
+                <h2 class="section-title">Education</h2>
+                <div class="education-content">
+                    <div class="education-item">
+                        <h3>Columbia University, New York, NY</h3>
+                        <p class="degree">Master of Science in Computer Science — Expected Sep 2026</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Barnard College, Columbia University, New York, NY</h3>
+                        <p class="degree">Bachelor of Arts in Computer Science — May 2025</p>
+                    </div>
+                    <div class="coursework">
+                        <h4>Selected Coursework:</h4>
+                        <p>Artificial Intelligence · Natural Language Processing · Advanced Software Engineering · Machine Learning · Computer Vision · Intro to Databases · Mobile App Development · UI Design · Data Structures and Algorithms</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 工作经历 -->
+            <div class="about-card">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-content">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Software & Data Engineering Intern</h3>
+                            <span class="company">Geopath</span>
+                            <span class="duration">Jan 2025 – Aug 2025, New York, NY</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Refactored a Jupyter-only Reach/Frequency model into a modular Python framework, enabling cross-environment execution and faster onboarding for the August release.</li>
+                            <li>Engineered a CLI tool supporting one-command runs, caching, and environment switching, improving efficiency by 80%.</li>
+                            <li>Automated QA by integrating Snowflake pipelines, API validation, and MAE/RMSE checks, ensuring model accuracy before release.</li>
+                            <li>Analyzed over 10M forecast records and built Sigma dashboards that guided business stakeholders' release decisions.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Software Engineering Intern</h3>
+                            <span class="company">China Construction Bank Insurance Asset Management Co., Ltd.</span>
+                            <span class="duration">May 2023 – Aug 2023, Shanghai, CN</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Migrated and optimized Oracle SQL databases with redesigned ER schema and indexing, improving query performance by 25%.</li>
+                            <li>Built an AI system to automate key financial data extraction from balance sheets using Python, reducing manual work and redundant processing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目 -->
+            <div class="about-card">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-content">
+                    <div class="project-item">
+                        <h3>EveryoneSQL — Natural Language SQL Assistant</h3>
+                        <ul class="project-details">
+                            <li>Built a chatbot interface using GPT-4, LangChain, and Streamlit, allowing non-technical users to query databases through natural language.</li>
+                            <li>Translated user inputs into optimized SQL queries with LangChain, executed in MySQL, and returned natural-language summaries.</li>
+                            <li>Designed adaptive prompt templates to improve query precision by adjusting to user intent and schema context.</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>LLM Evaluation Pipeline (TuringQ Dataset)</h3>
+                        <ul class="project-details">
+                            <li>Orchestrated an automated evaluation system in Python to benchmark GPT-4o, Gemini 1.5 Pro, LLaMA 3, and DeepSeek-R1 on the TuringQ dataset.</li>
+                            <li>Automated both objective and subjective scoring via Exact Match metrics and LLM-based binary evaluation, achieving scalable multi-model comparison.</li>
+                            <li>Synthesized accuracy and reasoning results into visual dashboards to reveal performance trade-offs across model families.</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>Second-hand Buy and Sell Platform — Campus Marketplace</h3>
+                        <ul class="project-details">
+                            <li>Designed a secure trading platform with university email authentication and an integrated AI agent.</li>
+                            <li>Developed Java backend + React Native frontend for cross-platform listings and real-time chat.</li>
+                            <li>Prototyped responsive UI/UX in Figma and managed a 4-person team through Jira sprints.</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>Flush — NYC Restroom Finder (iOS App)</h3>
+                        <ul class="project-details">
+                            <li>Engineered an iOS app with Swift, Firebase Firestore, and MapKit to help users locate and review public restrooms across New York City.</li>
+                            <li>Integrated real-time geolocation and interactive map layers, enabling users to browse, filter, and submit restroom information.</li>
+                            <li>Designed a clean interface and structured Firestore schema supporting accessibility tags, gender options, and operating-hour filters.</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>StockMean Platform — Trading Assistant Web App</h3>
+                        <ul class="project-details">
+                            <li>Built a Flutter + Python web app for A-share markets with automated trading, real-time asset tracking, and visual analytics.</li>
+                            <li>Integrated APIs for live stock and forex data to support fast trading decisions.</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>Computer Vision Projects</h3>
+                        <ul class="project-details">
+                            <li>Crafted a Facial Emotion Recognition system using CNN architectures for real-time affect detection.</li>
+                            <li>Designed a Face Morphing pipeline aligning facial landmarks to blend human and celebrity portraits smoothly.</li>
+                            <li>Applied transfer learning on pretrained ResNet and VGG networks for object recognition, and trained a GAN to generate realistic handwritten digits (MNIST).</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>Dependency Parser using Neural Network</h3>
+                        <ul class="project-details">
+                            <li>Developed a PyTorch feed-forward neural network for transition-based dependency parsing.</li>
+                            <li>Combined word, POS, and dependency embeddings into compact vectors, improving parsing scores by 2% on multilingual datasets.</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>HIV Data Analysis</h3>
+                        <ul class="project-details">
+                            <li>Constructed a full data pipeline in Python, leveraging Pandas and Matplotlib to analyze over 10,000 HIV case records.</li>
+                            <li>Refined datasets through cleaning, normalization, and outlier detection, ensuring statistical accuracy and consistency.</li>
+                            <li>Visualized epidemiological trends and correlations, uncovering key insights that informed predictive modeling experiments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 技能 -->
+            <div class="about-card">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-content">
+                    <div class="skill-category">
+                        <h4>Languages:</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">Swift</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">NoSQL</span>
+                            <span class="skill-tag">JSON</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frameworks & Tools:</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Streamlit</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Snowflake</span>
+                            <span class="skill-tag">Firebase Firestore</span>
+                            <span class="skill-tag">MapKit</span>
+                            <span class="skill-tag">Sigma</span>
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">Cloud & SaaS Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 粒子效果 -->
+    <canvas id="particles-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
